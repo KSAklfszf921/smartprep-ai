@@ -4,42 +4,42 @@ import { Check, Star } from "lucide-react";
 
 const plans = [
   {
-    name: "Starter",
-    price: "$19",
-    description: "Perfect for individual teachers getting started with AI",
+    name: "Grundpaket",
+    price: "199 kr",
+    description: "Perfekt för enskilda lärare som kommer igång med AI",
     features: [
-      "Access to 3 AI tools",
-      "50 generations per month",
-      "Basic templates",
-      "Email support"
+      "Tillgång till 3 AI-verktyg",
+      "50 genereringar per månad",
+      "Grundmallar",
+      "E-postsupport"
     ],
     popular: false
   },
   {
-    name: "Professional",
-    price: "$39",
-    description: "Everything you need for comprehensive teaching support",
+    name: "Professionell",
+    price: "399 kr",
+    description: "Allt du behöver för omfattande undervisningsstöd",
     features: [
-      "Access to all AI tools",
-      "Unlimited generations",
-      "Premium templates",
-      "Priority support",
-      "Curriculum alignment",
-      "Analytics dashboard"
+      "Tillgång till alla AI-verktyg",
+      "Obegränsade genereringar",
+      "Premiummallar",
+      "Prioriterad support",
+      "Läroplansjustering",
+      "Analysdashboard"
     ],
     popular: true
   },
   {
-    name: "School",
-    price: "$99",
-    description: "Multi-teacher access with admin controls",
+    name: "Skola",
+    price: "999 kr",
+    description: "Flera lärarkonton med administratörskontroller",
     features: [
-      "Everything in Professional",
-      "Up to 10 teacher accounts",
-      "School-wide analytics",
-      "Custom templates",
-      "Training sessions",
-      "Dedicated support"
+      "Allt i Professionell",
+      "Upp till 10 lärarkonton",
+      "Skolövergripande analys",
+      "Anpassade mallar",
+      "Utbildningstillfällen",
+      "Dedikerad support"
     ],
     popular: false
   }
@@ -47,14 +47,14 @@ const plans = [
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="py-20 px-4 bg-muted/30">
+    <section id="priser" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Simple, Transparent Pricing
+            Enkla, transparenta priser
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose the plan that fits your needs. All plans include a 14-day free trial with no commitment.
+            Välj det paket som passar dina behov. Alla paket inkluderar 14 dagars gratis test utan åtagande.
           </p>
         </div>
         
@@ -65,7 +65,7 @@ const Pricing = () => {
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                   <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
                     <Star className="h-3 w-3 fill-current" />
-                    Most Popular
+                    Mest populär
                   </div>
                 </div>
               )}
@@ -74,7 +74,7 @@ const Pricing = () => {
                 <CardTitle className="text-2xl">{plan.name}</CardTitle>
                 <div className="flex items-baseline justify-center gap-1 mt-4">
                   <span className="text-4xl font-bold text-foreground">{plan.price}</span>
-                  <span className="text-muted-foreground">/month</span>
+                  <span className="text-muted-foreground">/månad</span>
                 </div>
                 <CardDescription className="mt-2">{plan.description}</CardDescription>
               </CardHeader>
@@ -85,7 +85,7 @@ const Pricing = () => {
                   className="w-full mb-6"
                   size="lg"
                 >
-                  Start Free Trial
+                  Starta gratis test
                 </Button>
                 
                 <ul className="space-y-3">

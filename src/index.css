@@ -17,16 +17,16 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 24% 16%;
 
-    --primary: 210 79% 46%;
+    --primary: 85 41% 23%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 25% 95%;
-    --secondary-foreground: 210 24% 16%;
+    --secondary-foreground: 85 41% 23%;
 
     --muted: 210 25% 95%;
-    --muted-foreground: 210 16% 50%;
+    --muted-foreground: 85 20% 45%;
 
-    --accent: 168 76% 42%;
+    --accent: 85 41% 23%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -36,15 +36,17 @@ All colors MUST be HSL.
     --input: 210 20% 88%;
     --ring: 210 79% 46%;
 
-    /* Custom educational design tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(210 79% 46%), hsl(168 76% 42%));
-    --card-gradient: linear-gradient(135deg, hsl(0 0% 100%), hsl(210 25% 98%));
-    --accent-gradient: linear-gradient(135deg, hsl(168 76% 42%), hsl(168 76% 35%));
+    /* Allgot design tokens inspired by natural green tones */
+    --hero-gradient: linear-gradient(135deg, hsl(85 41% 23%), hsl(85 35% 35%));
+    --card-gradient: linear-gradient(135deg, hsl(0 0% 100%), hsl(85 15% 98%));
+    --accent-gradient: linear-gradient(135deg, hsl(85 41% 23%), hsl(85 35% 30%));
+    --nature-green: 85 41% 23%;
+    --soft-green: 85 15% 95%;
     
-    --shadow-sm: 0 2px 4px hsl(210 24% 16% / 0.04);
-    --shadow-md: 0 4px 12px hsl(210 24% 16% / 0.08);
-    --shadow-lg: 0 8px 24px hsl(210 24% 16% / 0.12);
-    --shadow-hero: 0 20px 40px hsl(210 79% 46% / 0.15);
+    --shadow-sm: 0 2px 4px hsl(85 41% 23% / 0.04);
+    --shadow-md: 0 4px 12px hsl(85 41% 23% / 0.08);
+    --shadow-lg: 0 8px 24px hsl(85 41% 23% / 0.12);
+    --shadow-hero: 0 20px 40px hsl(85 41% 23% / 0.15);
 
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
